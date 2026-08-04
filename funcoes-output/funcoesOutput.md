@@ -50,5 +50,6 @@ Ex:
 }
 ```
 Saída: 
-```O nome do curso é Computação e o seu tipo é string
+```
+O nome do curso é Computação e o seu tipo é string
 ```
