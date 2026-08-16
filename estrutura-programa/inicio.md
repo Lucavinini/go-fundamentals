@@ -1,0 +1,12 @@
+ Em Go, assim como em outras linguagens de programação, criamos programas grandes a partir de um conjunto pequeno de construções básicas.
+
+ Variáveis armazenam valores. Expressões simples são combinadas para formar expressões maiores com operações como adição e subtração. Tipos básicos são reunidos em agregados como arrays e estruturas. Expressões são usadas em instruções cuja ordem de execução é determinada por instruções de controle de uxo como if e for. Instruções são agrupadas em funções para isolamento e reutilização. Funções são reunidas em arquivos-fonte e em pacotes.
+
+2.1 Nomes
+Se uma entidade for declarada em uma função, ela será local a essa função. Porém, se for declarada fora de uma função, ela será visível a todos os arquivos do pacote ao qual ela pertence
+
+Se uma entidade for declarada em uma função, ela será local a essa função. Porém, se for declarada fora de uma função, ela será visível a todos os arquivos do pacote ao qual ela pertence. O fato de a primeira letra do nome ser maiúscula ou minúscula determina sua visibilidade além das fronteiras dos pacotes. Se o nome começa com uma letra maiúscula, ele é exportado, o que signica que é visível e acessível fora de seu próprio pacote e pode ser referenciado por outras partes do programa, como Printf do pacote fmt. Nomes de pacotes usam sempre letras minúsculas.
+
+Não há limite para o tamanho dos nomes, mas, segundo a convenção e o estilo de programas Go, a tendência é usar nomes curtos, especialmente para variáveis locais com escopos pequenos; é bem mais provável que você veja variáveis chamadas i que theLoopIndex. Geralmente, quanto maior o escopo de um nome, mais longo e mais signicativo ele deve ser. Do ponto de vista de estilo, programadores de Go usam ‘‘camel case’’ para 
+
+compor nomes por combinação de palavras, isto é, letras maiúsculas no interior do nome são preferíveis a underscores no meio. Desse modo, as bibliotecas-padrão têm funções com nomes como QuoteRuneToASCII e parseRequestLine, mas jamais quote_rune_to_ASCII ou parse_request_line. As letras de siglas e acrônimos como ASCII e HTML são todas representadas com maiúscula ou minúscula, portanto uma função pode se chamar htmlEscape, HTMLEscape ou escapeHTML, mas nunca escapeHtml
